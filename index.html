@@ -1,77 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GoluMolu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Apple-Style Webpage</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333333;
+        /* Reset some default styles */
+        body, h1, p {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-        nav {
-            background: #fff;
-            padding: 10px 20px;
+
+        /* Set a clean font */
+        body {
+            font-family: "San Francisco", Arial, sans-serif;
+        }
+
+        /* Create a header with a mix of colors */
+        header {
+            background: linear-gradient(45deg, #FF3366, #3399FF, #33FF99);
             text-align: center;
+            padding: 100px 0;
+            color: #fff;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #1a73e8;
-        }
-        nav ul li a:hover {
-            color: #ff5722;
-            transition: color 0.3s;
-        }
-        .hero {
-            height: 90vh;
-            background: url('/Users/abdullahbajwa/Desktop/docs/hero.jpg') no-repeat center center;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .hero-text {
-            max-width: 600px;
-            background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background for text readability */
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .hero-text h1 {
+
+        /* Style the heading */
+        h1 {
+            font-size: 36px;
             margin-bottom: 20px;
-            font-size: 3em;
-            color: #333;
         }
-        .hero-text p {
-            font-size: 1.2em;
+
+        /* Style the main content */
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Create a call-to-action button */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #000;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Add some animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation to specific elements */
+        .animate-fade {
+            animation: fadeIn 1s ease-in-out;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Welcome to GoluMolu</h1>
-            <p>Innovating for a better tomorrow.</p>
-        </div>
+    <header>
+        <h1>Welcome to Your Website</h1>
+        <p>Discover amazing products and services</p>
+        <a href="#" class="cta-button">Learn More</a>
+    </header>
+    <div class="content animate-fade">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
+    <footer>
+        &copy; 2024 Your Company Name
+    </footer>
 </body>
 </html>
